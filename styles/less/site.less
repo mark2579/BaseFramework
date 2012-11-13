@@ -1,0 +1,53 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%;
+vertical-align : baseline; background : transparent; }									
+
+article, aside, figure, footer, header, hgroup, nav, section { display : block; }
+
+html {
+background : @bodycolor; 
+font-size : 62.5%;
+-webkit-overflow-scrolling : touch; 
+-webkit-tap-highlight-color : lighten(@basecolor, 75%); 
+-webkit-text-size-adjust : 100%; 
+-ms-text-size-adjust : 100%; }
+
+body { 
+margin : 0;
+padding : 0;
+width : 100%;
+background-color : transparent;
+font-family : @basefont;
+.font-size();
+line-height : @baselineheight;
+color : @textcolor; }
+
+a { 
+text-decoration : none;
+color : @linkcolor; 
+
+&:visited { 
+color : @linkcolorvisited; }
+
+&:hover { 
+text-decoration : underline;
+color : @linkcolorhover; }
+
+&:focus { 
+outline : thin dotted; 
+color : @linkcolorfocus; }
+
+&:hover, 
+&:active { 
+outline : 0; }
+}
+
+::-moz-selection { 
+background-color : lighten(@basecolor, 65%); 
+color : @basecolor; 
+text-shadow : none; }  
+	
+::selection { 
+background-color : lighten(@basecolor, 65%); 
+color : @basecolor; 
+text-shadow : none; }
+
